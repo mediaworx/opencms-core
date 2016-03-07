@@ -353,7 +353,7 @@ public class CmsXmlContent extends A_CmsXmlDocument {
                 // append the new element at the calculated position
                 newValue = addValue(cms, parentElement, type, locale, insertIndex);
                 // validate the XML structure to see if the index position was valid
-                CmsXmlUtils.validateXmlStructure(m_document, m_encoding, new CmsXmlEntityResolver(cms));
+                // CmsXmlUtils.validateXmlStructure(m_document, m_encoding, new CmsXmlEntityResolver(cms));
             } catch (Exception e) {
                 throw new CmsRuntimeException(
                     Messages.get().container(
